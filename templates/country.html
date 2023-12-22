@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Table</title>
+</head>
+<body>
+    <center>
+        <h1>Country Table</h1>
+        <table border="4px">
+            <tr style="color: red;">
+                <th>Cid</th>
+                <th>Cname</th>
+                <th>cpl</th>
+            </tr>
+            {% for CO in data %}
+            
+            <tr style="color: teal;">
+                <td>{{CO.cid}}</td>
+                <td>{{CO.cname}}</td>
+                <td>{{CO.cpl}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+
+
+
+</body>
+</html>

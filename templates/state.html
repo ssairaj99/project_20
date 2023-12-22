@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Table</title>
+</head>
+<body>
+    <center>
+        <h1>State Table</h1>
+        <table border="4px">
+            <tr style="color: red;">
+                <th>Sid</th>
+                <th>Sname</th>
+                <th>Spl</th>
+                <th>Cid</th>
+            </tr>
+            {% for SO in data1 %}
+            
+            <tr style="color: teal;">
+                <td>{{SO.sid}}</td>
+                <td>{{SO.sname}}</td>
+                <td>{{SO.spl}}</td>
+                <td>{{SO.cid}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
